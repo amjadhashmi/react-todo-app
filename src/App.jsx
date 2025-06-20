@@ -20,7 +20,7 @@ export default function App() {
 
         {/*/////////////////////////////// Input Div /////////////////////////////////*/}
 
-        <div className="w-2/3 h-28 bg-white m-auto flex rounded-md mt-7">
+        <div className="w-3/5 h-28 bg-white m-auto flex rounded-md mt-7">
 
           <input type="text" className="bg-white p-3 mr-2 w-full h-12 mt-7 ml-7 rounded-md border border-gray-300 " placeholder="What needs to be done?" />
           <button className="bg-add-btn-bright-blue text-white p-1 rounded-md w-20 h-12 mt-7 mr-7">Add</button>
@@ -32,7 +32,7 @@ export default function App() {
 
         {/*//////////////////////////// History Div  ///////////////////////////////////////*/}
 
-        <div className="w-2/3 h-52 mt-8 bg-white m-auto">
+        <div className="w-3/5 h-52 mt-6 bg-white rounded-md m-auto">
 
 
                       
@@ -41,7 +41,7 @@ export default function App() {
 
 
                         {/*//// Box-1  /////*/}
-                  <div className="w-72 h-24 mt-5 bg-total-count-box flex flex-col justify-center items-center">
+                  <div className="w-[270px] h-24 mt-5 bg-total-count-box flex flex-col justify-center items-center rounded-md">
                    
                     <h1 className="text-xl font-bold">0</h1>
                     <p className=" text-gray-600">Total</p>
@@ -50,7 +50,7 @@ export default function App() {
 
 
                        {/*//// Box-2  /////*/}
-                  <div className="w-72 h-24 mt-5 bg-completed-box flex flex-col justify-center items-center">
+                  <div className="w-[270px] h-24 mt-5 bg-completed-box flex flex-col justify-center items-center rounded-md">
                   
                     <h1  className="text-xl font-bold text-green-600">0</h1>
                     <p className=" text-gray-600">Completed</p>
@@ -59,7 +59,7 @@ export default function App() {
 
 
                        {/*//// Box-3  /////*/}
-                  <div className="w-72 h-24 mt-5 bg-remaining-box flex flex-col justify-center items-center ">
+                  <div className="w-[270px] h-24 mt-5 bg-remaining-box flex flex-col justify-center items-center rounded-md ">
                    
                     <h1  className="text-xl font-bold text-red-400">0</h1>
                     <p className=" text-gray-600">Remaining</p>
@@ -70,10 +70,17 @@ export default function App() {
 
 
 
+
+               {/*////////// History Buttons ////////////*/}
+
               <div className="mt-5">
-                <button className="bg-blue-500 px-3 py-1 ml-10 mr-2 rounded-md">All (0)</button>
-                <button>Active (0)</button>
-                <button>Completed(0)</button>
+              
+                <button className="bg-blue-500 px-3 py-1 ml-8 mr-2 rounded-md">All (0)</button>
+                
+                <button className=" bg-page-bg-light-blue px-3 py-1 mr-2 rounded-md">Active (0)</button>
+                
+                <button className=" bg-page-bg-light-blue px-3 py-1 mr-2 rounded-md">Completed (0)</button>
+
               </div>
 
 

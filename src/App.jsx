@@ -1,4 +1,4 @@
-import { Container, Edit, Trash2 } from "lucide-react";
+import { Container, Edit, FileEdit, Trash2 } from "lucide-react";
 
 export default function App() {
   return (
@@ -88,6 +88,18 @@ export default function App() {
         </div>
 
 
+
+
+
+        {/*/////////////////////////////////////// FeedBack Div  ////////////////////////////////////////////*/}
+
+
+          <div className="w-3/5 h-36 bg-white mx-auto mt-6 flex flex-col items-center justify-center rounded-md">
+
+                <FileEdit className="h-14 w-14" />
+                <p className="text-gray-400"> No todos yet. Add one above to get started!</p>
+
+          </div>
 
 
 

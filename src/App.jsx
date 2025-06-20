@@ -3,7 +3,7 @@ import { Container, Edit, FileEdit, Trash2 } from "lucide-react";
 export default function App() {
   return (
 
-    <div  className=" bg-page-bg-light-blue w-full h-screen">
+    <div  className=" bg-page-bg-light-blue w-full h-min-screen">
 
 
          {/*//////////////////////// Header///////////////////////////////// */}
@@ -12,7 +12,7 @@ export default function App() {
 
             <h1 className="text-4xl font-bold pt-8">Todo App</h1>
 
-            <p className="p-2">stay organized and get thing done</p>
+            <p className="p-2 text-gray-600">stay organized and get things done</p>
 
           </div>
 
@@ -94,13 +94,20 @@ export default function App() {
         {/*/////////////////////////////////////// FeedBack Div  ////////////////////////////////////////////*/}
 
 
-          <div className="w-3/5 h-36 bg-white mx-auto mt-6 flex flex-col items-center justify-center rounded-md">
+          <div className="w-3/5 h-36 bg-card-bg mx-auto mt-6 flex flex-col items-center justify-center rounded-md">
 
                 <FileEdit className="h-14 w-14" />
                 <p className="text-gray-400"> No todos yet. Add one above to get started!</p>
 
           </div>
 
+
+
+          {/*///////////////////////////////////// Footer  /////////////////////////////////////////////////*/}
+
+                      <div className="h-20 mt-8 text-center">
+                      <footer className="text-muted-text">Your todos are automatically saved locally</footer>
+                      </div>
 
 
     </div>
